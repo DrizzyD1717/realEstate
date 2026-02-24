@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LuxePath Estates | Modern Architectural Real Estate
 
-## Getting Started
+A high-end, multi-page real estate platform built with **Next.js 15**, **TypeScript**, and **Framer Motion**. This project serves as a showcase for modern web development patterns, focusing on minimalist design, dynamic routing, and smooth user interactions.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🏗 Tech Stack
+
+- **Framework:** [Next.js 15](https://nextjs.org/) (App Router)
+- **Language:** [TypeScript](https://www.typescript.org/) (Strictly Typed)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/) (Custom Design System)
+- **Animations:** [Framer Motion](https://www.framer.com/motion/) (Scroll-linked & Layout animations)
+- **Icons:** [Lucide React](https://lucide.dev/)
+
+---
+
+## 🌟 Key Features
+
+### 1. Dynamic Routing & Data Flow
+
+Utilizes Next.js dynamic segments (`/properties/[id]`) to render individual property pages. Implements the latest **Asynchronous Params** pattern introduced in Next.js 15 to ensure reliable server-side data resolution.
+
+### 2. High-Performance Media
+
+Leverages the `next/image` component for automatic image optimization, lazy loading, and prevention of Layout Shift (CLS), ensuring a "Premium" performance score.
+
+### 3. Centralized Data Architecture
+
+All site content is managed through a single, scalable constants file, demonstrating a data-driven approach that mimics headless CMS integration.
+
+### 4. Advanced UX & UI
+
+- **Interactive Filtering:** Real-time property filtering using Framer Motion's `AnimatePresence` for fluid layout transitions.
+- **Bespoke Theme:** A custom monochrome design system defined in `tailwind.config.ts`.
+- **Custom Error Handling:** A tailored `not-found.tsx` experience to maintain brand continuity during navigation errors.
+
+---
+
+## 📂 Project Structure
+
+```text
+├── app/
+│   ├── (root)/              # Shared marketing layout
+│   │   ├── properties/      # Listing & Dynamic Detail pages
+│   │   ├── services/        # Service-oriented Z-pattern layout
+│   │   └── contact/         # Form with state-driven success UI
+│   ├── not-found.tsx        # Custom 404 Experience
+│   └── globals.css          # Design system foundations
+├── components/              # Atomic UI components
+├── constants/               # Centralized data repository
+└── tailwind.config.ts       # Custom color palette & design tokens
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
