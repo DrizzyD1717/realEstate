@@ -8,19 +8,19 @@ const services = [
     title: "Property Management",
     description:
       "We provide comprehensive oversight for high-value estates, ensuring your investment is maintained to the highest architectural standards.",
-    image: "/service-1.jpg", // Placeholder
+    image: "/images/exterior.jpg", // Placeholder
   },
   {
     title: "Interior Consulting",
     description:
       "Our team collaborates with world-renowned designers to harmonize your living space with the minimalist aesthetic of your home.",
-    image: "/service-2.jpg",
+    image: "/images/interior.jpg",
   },
   {
     title: "Investment Strategy",
     description:
       "Data-driven insights into the luxury market to help you acquire assets that offer both lifestyle and long-term financial growth.",
-    image: "/service-3.jpg",
+    image: "/images/model.jpg",
   },
 ];
 
